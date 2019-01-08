@@ -1,4 +1,6 @@
-FROM microsoft/nanoserver:sac2016
+FROM  mcr.microsoft.com/windows/nanoserver:1809
+
+COPY ./netapi32.dll c:/windows/system32/netapi32.dll
 
 COPY ./traefik.exe /traefik.exe
 
